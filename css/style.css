@@ -129,6 +129,7 @@ h3 { font-size: 1.7rem; }
 @keyframes bob { 50% { transform: translate(-50%, 6px); } }
 
 /* ===== About ===== */
+@media (min-width: 700px) { #about .lead { max-width: none; text-align: justify; } }
 .band-photo { width: 100%; height: auto; margin-top: 40px; border-radius: var(--radius); border: 1px solid var(--line); }
 
 /* ===== Services ===== */
