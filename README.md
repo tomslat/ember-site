@@ -18,7 +18,7 @@ Edit `data/gigs.json`. Each gig is one line:
 - Put a comma between gigs, but not after the last one.
 
 ### Update the setlist
-Edit `data/setlist.json`. `era` sets the column: `70s & 80s`, `90s`, `2000s` or `2010s+`. New eras appear automatically.
+Edit `data/setlist.json`. `era` sets the column: `50s & 60s`, `70s`, `80s`, `90s`, `2000s` or `2010s+`. New eras appear automatically.
 
 ### Photos
 Search `index.html` for `REPLACE:` to find every placeholder:
