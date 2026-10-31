@@ -47,11 +47,10 @@ Then open http://localhost:8080. Opening `index.html` by double-clicking won't l
 
 ## One-time setup
 
-### 1. Booking form (Formspree)
-1. Sign up at https://formspree.io with the email address that should receive enquiries.
-2. Create a new form and copy its ID (for example `xyzabcd` from `https://formspree.io/f/xyzabcd`).
-3. In `index.html`, replace `YOUR_FORM_ID` with it.
-4. Send a test enquiry from the live site and confirm the email arrives (check spam the first time).
+### 1. Booking form (Web3Forms) ✅ done
+Enquiries are emailed through https://web3forms.com (no account needed, 250 a month free). The access key is the `access_key` hidden field in `index.html`.
+- To send enquiries to a different inbox, request a new key at web3forms.com with that email and replace the value.
+- Spam protection: the hidden `botcheck` field catches bots.
 
 ### 2. GitHub Pages
 1. Create a free account at https://github.com and a new **public** repository named `ember-site`.

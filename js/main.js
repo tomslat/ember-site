@@ -164,7 +164,7 @@
     if (e.key === "ArrowRight") show(current + 1);
   });
 
-  // ----- Booking form (Formspree) -----
+  // ----- Booking form (Web3Forms) -----
   const form = $("#booking-form");
   const status = $(".form__status", form);
   const dateInput = form.querySelector('input[type="date"]');
@@ -174,18 +174,13 @@
     e.preventDefault();
     status.className = "form__status";
 
-    if (form.action.includes("YOUR_FORM_ID")) {
-      status.textContent = "The booking form isn't connected yet. Add your Formspree form ID in index.html.";
-      status.classList.add("is-err");
-      return;
-    }
-
     const btn = form.querySelector("button[type=submit]");
     btn.disabled = true;
     status.textContent = "Sending…";
     try {
       const res = await fetch(form.action, { method: "POST", body: new FormData(form), headers: { Accept: "application/json" } });
-      if (!res.ok) throw new Error(res.status);
+      const data = await res.json().catch(() => ({}));
+      if (!res.ok || !data.success) throw new Error(data.message || res.status);
       form.reset();
       status.textContent = "Thanks! Your enquiry is in. We'll be in touch shortly.";
       status.classList.add("is-ok");
