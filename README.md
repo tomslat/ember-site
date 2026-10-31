@@ -36,8 +36,8 @@ Resize photos before uploading. About 1600px wide and under 300 KB keeps the sit
 ### Videos
 In the "MEDIA" section, put the YouTube video ID in `data-youtube="..."`. The ID is the part after `v=` in `https://www.youtube.com/watch?v=XXXXXXXXXXX`.
 
-### Bio, testimonials, social links
-Edit the text directly in `index.html` (search for `REPLACE:`). Add the band's social profile URLs to the `"sameAs": []` list near the top too, which helps Google.
+### Bio, social links
+Edit the text directly in `index.html`. If you change the social links in the footer, update the `"sameAs"` list near the top too, which helps Google.
 
 ## Preview locally
 ```bash
