@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#0d0a0a">
   <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 
-  <!-- Social sharing previews (swap og-image for a real band photo, 1200x630) -->
+  <!-- Social sharing previews -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Ember | Rock Covers Band, Limerick">
   <meta property="og:description" content="Rock covers for weddings, parties and pubs across Limerick and Munster.">
@@ -32,7 +32,7 @@
     "description": "Rock covers band from Limerick, Ireland, available for weddings, parties and functions.",
     "foundingLocation": { "@type": "Place", "name": "Limerick, Ireland" },
     "areaServed": ["Limerick", "Clare", "Tipperary", "Cork", "Kerry", "Munster", "Ireland"],
-    "sameAs": []
+    "sameAs": ["https://www.facebook.com/emberireland/", "https://www.instagram.com/emberireland/"]
   }
   </script>
 </head>
@@ -85,28 +85,10 @@
         <p class="lead">
           <!-- REPLACE: real band bio -->
           Ember are a four-piece rock covers band from Limerick, playing the anthems everyone knows,
-          from Thin Lizzy and The Cranberries to The Killers and Arctic Monkeys. Packed bar on a Saturday
+          from Johnny Cash and Thin Lizzy to The Waterboys, The Killers and Kings of Leon. Packed bar on a Saturday
           night or a wedding dancefloor, we keep it loud, tight and full of energy until the last song.
         </p>
-        <div class="members">
-          <!-- REPLACE: member photos, names and instruments -->
-          <article class="member">
-            <img src="images/placeholder.svg" alt="Band member photo" loading="lazy" width="400" height="400">
-            <h3>Name Surname</h3><p>Lead Vocals</p>
-          </article>
-          <article class="member">
-            <img src="images/placeholder.svg" alt="Band member photo" loading="lazy" width="400" height="400">
-            <h3>Name Surname</h3><p>Guitar &amp; Vocals</p>
-          </article>
-          <article class="member">
-            <img src="images/placeholder.svg" alt="Band member photo" loading="lazy" width="400" height="400">
-            <h3>Name Surname</h3><p>Bass</p>
-          </article>
-          <article class="member">
-            <img src="images/placeholder.svg" alt="Band member photo" loading="lazy" width="400" height="400">
-            <h3>Name Surname</h3><p>Drums</p>
-          </article>
-        </div>
+        <img class="band-photo" src="images/band.jpg" alt="The four members of Ember smiling outside a pub at night" loading="lazy" width="1600" height="909">
       </div>
     </section>
 
@@ -159,6 +141,8 @@
       <div class="container">
         <p class="eyebrow">See us live</p>
         <h2>Watch &amp; Listen</h2>
+        <iframe class="soundcloud" title="Ember: Mr. Brightside (The Killers cover) on SoundCloud" loading="lazy" allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/thomas-slattery-220821724/mr-brightside-cover&amp;color=%23ff5a1f&amp;auto_play=false&amp;hide_related=true&amp;show_comments=false&amp;show_reposts=false&amp;visual=true"></iframe>
         <!-- REPLACE: put a YouTube video ID in data-youtube (the part after v= in the URL) -->
         <div class="videos">
           <div class="video" data-youtube="" data-title="Ember live, video 1"></div>
@@ -195,14 +179,16 @@
       <div class="container">
         <p class="eyebrow">On stage</p>
         <h2>Gallery</h2>
-        <!-- REPLACE: add photos to images/gallery/ and update the src/href below -->
+        <!-- Full-size photos in images/gallery/, 800px thumbnails in images/gallery/thumbs/ -->
         <div class="gallery">
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Ember live on stage" loading="lazy" width="800" height="600"></a>
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Crowd at an Ember gig" loading="lazy" width="800" height="600"></a>
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Ember playing a wedding" loading="lazy" width="800" height="600"></a>
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Guitarist close-up" loading="lazy" width="800" height="600"></a>
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Drummer on stage" loading="lazy" width="800" height="600"></a>
-          <a href="images/placeholder.svg"><img src="images/placeholder.svg" alt="Dancefloor at a party" loading="lazy" width="800" height="600"></a>
+          <a href="images/gallery/live-full-band.jpg"><img src="images/gallery/thumbs/live-full-band.jpg" alt="Ember playing live in front of the Ember banner" loading="lazy" width="800" height="422"></a>
+          <a href="images/gallery/live-amber.jpg"><img src="images/gallery/thumbs/live-amber.jpg" alt="The full band on stage under warm lights" loading="lazy" width="800" height="426"></a>
+          <a href="images/gallery/guitar-solo.jpg"><img src="images/gallery/thumbs/guitar-solo.jpg" alt="Guitarist playing a sunburst Les Paul" loading="lazy" width="800" height="800"></a>
+          <a href="images/gallery/live-green-1.jpg"><img src="images/gallery/thumbs/live-green-1.jpg" alt="Singer belting it out under green stage lights" loading="lazy" width="800" height="425"></a>
+          <a href="images/gallery/bass-silhouette.jpg"><img src="images/gallery/thumbs/bass-silhouette.jpg" alt="Bass player silhouetted against bright stage lights" loading="lazy" width="800" height="800"></a>
+          <a href="images/gallery/live-green-2.jpg"><img src="images/gallery/thumbs/live-green-2.jpg" alt="Ember on stage with the drummer in the background" loading="lazy" width="800" height="425"></a>
+          <a href="images/gallery/live-lights.jpg"><img src="images/gallery/thumbs/live-lights.jpg" alt="Ember playing a pub gig under purple lights" loading="lazy" width="561" height="312"></a>
+          <a href="images/gallery/band-selfie.jpg"><img src="images/gallery/thumbs/band-selfie.jpg" alt="The band together for a selfie in the bar" loading="lazy" width="800" height="600"></a>
         </div>
       </div>
     </section>
@@ -279,12 +265,9 @@
         <img src="images/logo.svg" alt="" width="32" height="32"><span>EMBER</span>
       </div>
       <p class="footer__contact"><a href="#book">Booking enquiries</a></p>
-      <!-- REPLACE: real social links -->
       <nav class="socials" aria-label="Social media">
-        <a href="https://facebook.com/" rel="noopener" target="_blank">Facebook</a>
-        <a href="https://instagram.com/" rel="noopener" target="_blank">Instagram</a>
-        <a href="https://youtube.com/" rel="noopener" target="_blank">YouTube</a>
-        <a href="https://tiktok.com/" rel="noopener" target="_blank">TikTok</a>
+        <a href="https://www.facebook.com/emberireland/" rel="noopener" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/emberireland/" rel="noopener" target="_blank">Instagram</a>
       </nav>
       <p class="footer__small">&copy; <span id="year"></span> Ember &middot; Rock Covers Band &middot; Limerick, Ireland</p>
     </div>

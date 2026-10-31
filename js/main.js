@@ -94,7 +94,7 @@
   const setlistEl = $("#setlist-list");
   const search = $("#setlist-search");
   let songs = [];
-  const ERA_ORDER = ["70s & 80s", "90s", "2000s", "2010s+"];
+  const ERA_ORDER = ["50s & 60s", "70s", "80s", "90s", "2000s", "2010s+"];
 
   function renderSetlist(filter = "") {
     const q = filter.trim().toLowerCase();
