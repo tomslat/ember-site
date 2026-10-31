@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="r" cx=".5" cy=".9" r=".9">
+      <stop offset="0" stop-color="#ff5a1f" stop-opacity=".55"/>
+      <stop offset=".5" stop-color="#5a1410" stop-opacity=".6"/>
+      <stop offset="1" stop-color="#141010"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#141010"/>
+  <rect width="800" height="600" fill="url(#r)"/>
+  <text x="400" y="310" font-family="Arial, sans-serif" font-size="34" fill="#f3e6dc" fill-opacity=".55" text-anchor="middle" letter-spacing="6">BAND PHOTO HERE</text>
+</svg>

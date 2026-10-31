@@ -1,0 +1,23 @@
+[
+  { "song": "Mr. Brightside", "artist": "The Killers", "era": "2000s" },
+  { "song": "Seven Nation Army", "artist": "The White Stripes", "era": "2000s" },
+  { "song": "Use Somebody", "artist": "Kings of Leon", "era": "2000s" },
+  { "song": "I Bet You Look Good on the Dancefloor", "artist": "Arctic Monkeys", "era": "2000s" },
+  { "song": "Valerie", "artist": "Amy Winehouse", "era": "2000s" },
+  { "song": "Dancing in the Moonlight", "artist": "Thin Lizzy", "era": "70s & 80s" },
+  { "song": "Whiskey in the Jar", "artist": "Thin Lizzy", "era": "70s & 80s" },
+  { "song": "Sweet Child O' Mine", "artist": "Guns N' Roses", "era": "70s & 80s" },
+  { "song": "Livin' on a Prayer", "artist": "Bon Jovi", "era": "70s & 80s" },
+  { "song": "Don't Stop Me Now", "artist": "Queen", "era": "70s & 80s" },
+  { "song": "With or Without You", "artist": "U2", "era": "70s & 80s" },
+  { "song": "Linger", "artist": "The Cranberries", "era": "90s" },
+  { "song": "Zombie", "artist": "The Cranberries", "era": "90s" },
+  { "song": "Wonderwall", "artist": "Oasis", "era": "90s" },
+  { "song": "Song 2", "artist": "Blur", "era": "90s" },
+  { "song": "Everlong", "artist": "Foo Fighters", "era": "90s" },
+  { "song": "Bitter Sweet Symphony", "artist": "The Verve", "era": "90s" },
+  { "song": "Shut Up and Dance", "artist": "Walk the Moon", "era": "2010s+" },
+  { "song": "Uptown Funk", "artist": "Mark Ronson ft. Bruno Mars", "era": "2010s+" },
+  { "song": "Sex on Fire", "artist": "Kings of Leon", "era": "2000s" },
+  { "song": "Galway Girl", "artist": "Steve Earle", "era": "90s" }
+]
