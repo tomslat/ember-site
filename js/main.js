@@ -9,13 +9,6 @@
   const escapeHtml = (s) =>
     String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
-  // Temporary: layout diagnostics on emberireland.com/?debug
-  if (new URLSearchParams(location.search).has("debug")) {
-    const s = document.createElement("script");
-    s.src = "js/debug.js";
-    document.body.appendChild(s);
-  }
-
   // ----- Nav: background on scroll + mobile menu -----
   const nav = $(".nav");
   const toggle = $(".nav__toggle");
