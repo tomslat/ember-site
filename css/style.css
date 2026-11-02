@@ -26,6 +26,8 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+/* iOS Safari still lets the page pan sideways with overflow-x: hidden on body; clip on the root stops it */
+@supports (overflow: clip) { html, body { overflow-x: clip; } }
 img { max-width: 100%; display: block; }
 a { color: var(--ember-hot); }
 h1, h2, h3 { font-family: var(--display); font-weight: 400; letter-spacing: .03em; line-height: 1; margin: 0 0 .5em; }
@@ -212,9 +214,10 @@ h3 { font-size: 1.7rem; }
 .form { margin-top: 30px; display: grid; gap: 18px; }
 .form__row { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
 @media (max-width: 600px) { .form__row { grid-template-columns: 1fr; } }
-.form label { display: grid; gap: 6px; font-size: .88rem; font-weight: 500; color: var(--muted); }
+.form label { display: grid; gap: 6px; min-width: 0; font-size: .88rem; font-weight: 500; color: var(--muted); }
+/* min-width: 0 stops iOS Safari's wide native date input from pushing the page sideways */
 .form input, .form select, .form textarea {
-  width: 100%; padding: 13px 14px; font: inherit; font-size: 1rem; color: var(--text);
+  width: 100%; min-width: 0; padding: 13px 14px; font: inherit; font-size: 1rem; color: var(--text);
   background: var(--bg); border: 1px solid var(--line); border-radius: 10px;
   color-scheme: dark;
 }
